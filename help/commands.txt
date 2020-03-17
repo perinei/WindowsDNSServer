@@ -1,0 +1,1 @@
+netsh interface ipv4 set dns "Ethernet" static 8.8.8.8
