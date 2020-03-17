@@ -1,1 +1,6 @@
 netsh interface ipv4 set dns "Ethernet" static 8.8.8.8
+netsh interface ipv4 set dns "Ethernet" dhcp
+
+Set-DnsClientServerAddress -InterfaceIndex 10 -ServerAddresses ("10.0.0.1","10.0.0.2")
+
+Set-DnsClientServerAddress -InterfaceIndex 12 -ResetServerAddresses
